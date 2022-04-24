@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coba Soal Javascript</title>
+</head>
+<body>
+    <div>
+        <span>Skor:</span>
+        <span id="target">0</span>
+    </div>
+    <div class="soal">
+        <p>Teman saya tidak berpuasa di bulan ramadan, apa tindakan yang tepat untuk saya lakukan?</p>
+        <label for="a">
+            <input type="radio" name="soal1" id="a" value="a">
+            A. Membiarkannya karena itu adalah urusan pribadi masing-masing.
+        </label> <br>
+        <label for="b">
+            <input type="radio" name="soal1" id="b" value="b">
+            B. Melaporkan pada guru agar ia ditegur.
+        </label> <br>
+        <label for="c">
+            <input type="radio" name="soal1" id="c" value="c">
+            C. Ikut makan bersamanya di kantin sekolah.
+        </label> <br>
+        <label for="d">
+            <input type="radio" name="soal1" id="d" value="d">
+            D. Mengajak teman sekelas untuk menjauhinya karena dia termasuk pendosa.
+        </label> <br>
+        <label for="e">
+            <input type="radio" name="soal1" id="e" value="e">
+            E. Menegurnya dengan sopan, lalu mengajaknya untuk berpuasa, esok hari.
+        </label> <br>
+        <button onclick="calculate('soal1')">Simpan jawaban</button>
+    </div>
+    <div  class="soal">
+        <p>Kelas saya sedang ada mata pelajaran dari guru yang membosankan. Beberapa teman saja mengabaikan pelajaran tersebut, bahkan ada yang tidur. Tindakan apa yang harus saya lakukan?</p>
+        <label for="a2">
+            <input type="radio" name="soal2" id="a2" value="a">
+            A. Bermain dengan teman sebangku agar tidak jenuh.
+        </label> <br>
+        <label for="b2">
+            <input type="radio" name="soal2" id="b2" value="b">
+            B. Tetap memperhatikan meskipun bosan.
+        </label> <br>
+        <label for="c2">
+            <input type="radio" name="soal2" id="c2" value="c">
+            C. Memperingatkan teman sebangku agar tetap memperhatikan.
+        </label> <br>
+        <label for="d2">
+            <input type="radio" name="soal2" id="d2" value="d">
+            D. Izin ke kamar kecil lalu pergi ke kantin saja.
+        </label> <br>
+        <label for="e2">
+            <input type="radio" name="soal2" id="e2" value="e">
+            E. Melaporkan kepada guru tersebut agar siswa yang mengabaikan diberi nilai jelek.
+        </label> <br>
+        <button onclick="calculate('soal2')">Simpan jawaban</button>
+    </div>
+    
+    <div id="soal3">
+        <p>Dari pilihan di bawah ini manakah yang termasuk rukun shalat?</p>
+        <label for="a3">
+            <input type="checkbox" name="a" id="a3" value="a">
+            A. Membaca Al-Fatihah
+        </label> <br>
+        <label for="b3">
+            <input type="checkbox" name="b" id="b3" value="b">
+            B. Membaca Doa Iftitah
+        </label> <br>
+        <label for="c3">
+            <input type="checkbox" name="c" id="c3" value="c">
+            C. Sujud
+        </label> <br>
+        <label for="d3">
+            <input type="checkbox" name="d" id="d3" value="d">
+            D. Membaca surat Al-Ikhlas
+        </label> <br>
+        <button onclick="calculateComplex('soal3')">Simpan jawaban</button>
+    </div>
+
+    <button onclick="showScore()">Cek Nilai</button>
+    <script src="app.js"></script>
+</body>
+</html>
